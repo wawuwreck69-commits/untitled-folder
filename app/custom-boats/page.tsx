@@ -124,7 +124,7 @@ export default function CustomBoatsPage() {
         <Crosshair className="bottom-8 left-8 text-white" delay={0.2} />
         <Crosshair className="bottom-8 right-8 text-white" delay={0.3} />
 
-        <div className="relative z-10 flex justify-between items-start p-8 md:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
+        <div className="relative z-10 flex justify-between items-start p-4 md:p-8 lg:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
           <div className="space-y-1">
             <p>LOC: 50.8841° N, 119.3973° W</p>
             <p>FACILITY: KELOWNA_BC_01</p>
@@ -135,7 +135,7 @@ export default function CustomBoatsPage() {
           </div>
         </div>
 
-        <div className="relative z-10 px-8 md:px-12 flex-1 flex flex-col justify-center">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 flex-1 flex flex-col justify-center">
           <div className="max-w-[120rem]">
             <motion.div variants={staggerContainer} initial="hidden" animate="visible">
               <h1 className="text-[10vw] sm:text-[8vw] lg:text-[6vw] leading-[0.8] font-bold tracking-tighter uppercase flex flex-col gap-2 md:gap-0 overflow-hidden">
@@ -154,7 +154,7 @@ export default function CustomBoatsPage() {
           </div>
         </div>
 
-        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/80 backdrop-blur-md">
+        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/60 backdrop-blur-md">
           <div className="p-6 md:p-8 border-r border-white/10">
             <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">Hull Grade</p>
             <p className="font-mono text-sm md:text-base tracking-widest">5083 H321</p>
@@ -182,7 +182,7 @@ export default function CustomBoatsPage() {
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 relative">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-black/10 pb-16 mb-16">
             <div className="max-w-3xl">
@@ -196,7 +196,7 @@ export default function CustomBoatsPage() {
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-black/10 border border-black/10">
             {capabilities.map((cap, i) => (
-              <motion.div key={cap.title} variants={fadeUp} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: i * 0.1 }} className="bg-[#f5f5f5] p-8 md:p-12 flex flex-col justify-between min-h-[350px] group hover:bg-white transition-colors">
+              <motion.div key={cap.title} variants={fadeUp} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: i * 0.1 }} className="bg-[#f5f5f5] p-4 md:p-8 lg:p-12 flex flex-col justify-between min-h-[350px] group hover:bg-white transition-colors">
                 <div className="flex justify-between items-start mb-12">
                   <div className="p-3 bg-black/5 rounded-none group-hover:bg-black group-hover:text-white transition-colors">
                     <cap.icon className="size-6" />
@@ -220,7 +220,7 @@ export default function CustomBoatsPage() {
         ========================================
       */}
       <section className="bg-[#050505] py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-16">
             [ Build Sequence ]
           </div>
@@ -250,7 +250,7 @@ export default function CustomBoatsPage() {
         ========================================
       */}
       <section className="bg-white text-black py-32 md:py-48">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-24 md:mb-32">
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase leading-none">Boat<br/>Types</h2>
@@ -305,7 +305,7 @@ export default function CustomBoatsPage() {
         ========================================
       */}
       <section className="bg-[#050505] text-[#ededed] py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-24">
             [ Ready to Launch ]
           </div>

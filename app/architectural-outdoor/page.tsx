@@ -111,10 +111,10 @@ export default function ArchitecturalOutdoorPage() {
       */}
       <section className="relative min-h-[70vh] w-full flex flex-col justify-between overflow-hidden border-b border-white/10">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-25"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: "url('/images/architectural/squarespace-06.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#050505]/45" />
+        <div className="absolute inset-0 bg-[#050505]/20" />
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.15 }} transition={{ duration: 2 }}>
           <DotPattern className="opacity-10 mix-blend-screen" />
         </motion.div>
@@ -124,7 +124,7 @@ export default function ArchitecturalOutdoorPage() {
         <Crosshair className="bottom-8 left-8 text-white" delay={0.2} />
         <Crosshair className="bottom-8 right-8 text-white" delay={0.3} />
 
-        <div className="relative z-10 flex justify-between items-start p-8 md:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
+        <div className="relative z-10 flex justify-between items-start p-4 md:p-8 lg:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
           <div className="space-y-1">
             <p>LOC: 50.8841° N, 119.3973° W</p>
             <p>FACILITY: KELOWNA_BC_01</p>
@@ -135,7 +135,7 @@ export default function ArchitecturalOutdoorPage() {
           </div>
         </div>
 
-        <div className="relative z-10 px-8 md:px-12 flex-1 flex flex-col justify-center">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 flex-1 flex flex-col justify-center">
           <div className="max-w-[120rem]">
             <motion.div variants={staggerContainer} initial="hidden" animate="visible">
               <h1 className="text-[9vw] sm:text-[7vw] lg:text-[5vw] leading-[0.8] font-bold tracking-tighter uppercase flex flex-col gap-2 md:gap-0 overflow-hidden">
@@ -154,7 +154,7 @@ export default function ArchitecturalOutdoorPage() {
           </div>
         </div>
 
-        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/80 backdrop-blur-md">
+        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/60 backdrop-blur-md">
           <div className="p-6 md:p-8 border-r border-white/10">
             <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">Style</p>
             <p className="font-mono text-sm md:text-base tracking-widest">CUSTOM</p>
@@ -177,7 +177,7 @@ export default function ArchitecturalOutdoorPage() {
       </section>
 
       <section className="bg-[#f2f2f2] text-[#050505] py-20 border-b border-black/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <div className="relative min-h-[360px] md:min-h-[500px] border border-black/10 overflow-hidden">
             <Crosshair className="top-6 left-6 text-black/30" />
             <Crosshair className="bottom-6 right-6 text-black/30" />
@@ -199,7 +199,7 @@ export default function ArchitecturalOutdoorPage() {
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 relative">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-black/10 pb-16 mb-16">
             <div className="max-w-3xl">
@@ -213,7 +213,7 @@ export default function ArchitecturalOutdoorPage() {
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-black/10 border border-black/10">
             {products.map((product, i) => (
-              <motion.div key={product.title} variants={fadeUp} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: i * 0.1 }} className="bg-[#f5f5f5] p-8 md:p-12 flex flex-col justify-between min-h-[350px] group hover:bg-white transition-colors">
+              <motion.div key={product.title} variants={fadeUp} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: i * 0.1 }} className="bg-[#f5f5f5] p-4 md:p-8 lg:p-12 flex flex-col justify-between min-h-[350px] group hover:bg-white transition-colors">
                 <div className="flex justify-between items-start mb-12">
                   <div className="p-3 bg-black/5 rounded-none group-hover:bg-black group-hover:text-white transition-colors">
                     <product.icon className="size-6" />
@@ -237,7 +237,7 @@ export default function ArchitecturalOutdoorPage() {
         ========================================
       */}
       <section className="bg-[#050505] py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-16">
             [ Finishes & Applications ]
           </div>
@@ -285,7 +285,7 @@ export default function ArchitecturalOutdoorPage() {
         ========================================
       */}
       <section className="bg-white text-black py-32 md:py-48 relative overflow-hidden">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-8 md:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
           <div className="max-w-4xl">
             <h2 className="text-[8vw] md:text-[6vw] font-bold tracking-tighter uppercase leading-[0.8] mb-8">
               Have a <br/> Design?

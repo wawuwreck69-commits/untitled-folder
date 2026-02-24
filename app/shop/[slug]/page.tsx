@@ -84,7 +84,7 @@ export default function ProductPage({
         <Crosshair className="bottom-8 left-8 text-white" delay={0.2} />
         <Crosshair className="bottom-8 right-8 text-white" delay={0.3} />
 
-        <div className="relative z-10 px-8 md:px-12 pt-8">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 pt-8">
           <Link
             href="/shop"
             className="inline-flex items-center gap-1.5 text-sm text-white/40 hover:text-white transition-colors font-mono text-[10px] tracking-[0.2em] uppercase"
@@ -94,7 +94,7 @@ export default function ProductPage({
           </Link>
         </div>
 
-        <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative z-10 mx-auto max-w-[100rem] px-8 md:px-12 py-16 md:py-24">
+        <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative z-10 mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 py-16 md:py-24">
           <div className="grid gap-10 lg:grid-cols-2">
             
             <div className="flex aspect-square items-center justify-center bg-[#0a0a0a] border border-white/10 relative">
@@ -158,7 +158,7 @@ export default function ProductPage({
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 border-b border-black/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid gap-px bg-black/10 border border-black/10">
             
             <motion.div variants={fadeUp} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0 }} className="bg-[#f5f5f5] p-10 md:p-16 min-h-[300px]">
@@ -213,7 +213,7 @@ export default function ProductPage({
       */}
       {product.faq.length > 0 && (
         <section className="bg-[#050505] py-32 md:py-48 border-b border-white/10">
-          <div className="mx-auto max-w-4xl px-8 md:px-12">
+          <div className="mx-auto max-w-4xl px-4 md:px-8 lg:px-12">
             <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.div variants={fadeUp} className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-16">
                 [ Frequently Asked ]
@@ -245,7 +245,7 @@ export default function ProductPage({
         ========================================
       */}
       <section className="bg-white text-black py-32 md:py-48 relative overflow-hidden">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-8 md:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
           <div className="max-w-4xl">
             <h2 className="text-[8vw] md:text-[6vw] font-bold tracking-tighter uppercase leading-[0.8] mb-8">
               Need <br/> Custom?

@@ -6,7 +6,7 @@ import { manufacturingServices, productCategories } from "@/lib/data/services"
 export function SiteFooter() {
   return (
     <footer className="border-t border-white/10 bg-[#0a0a0a]">
-      <div className="mx-auto max-w-[100rem] px-8 py-16">
+      <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company info */}
           <div className="flex flex-col gap-5">
@@ -128,7 +128,7 @@ export function SiteFooter() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[100rem] flex-col items-center justify-between gap-2 px-8 py-5 sm:flex-row">
+        <div className="mx-auto flex max-w-[100rem] flex-col items-center justify-between gap-2 px-4 md:px-8 lg:px-12 py-5 sm:flex-row">
           <p className="text-[10px] text-white/40 font-mono tracking-widest uppercase">
             &copy; {new Date().getFullYear()} 5th Element Innovation & Manufacturing Ltd. All
             rights reserved.

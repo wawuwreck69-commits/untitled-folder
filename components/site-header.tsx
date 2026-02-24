@@ -112,7 +112,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#050505]/90 backdrop-blur-xl">
       {/* Top bar */}
       <div className="hidden border-b border-white/10 lg:block">
-        <div className="mx-auto flex max-w-[100rem] items-center justify-between px-8 py-1.5">
+        <div className="mx-auto flex max-w-[100rem] items-center justify-between px-4 md:px-8 lg:px-12 py-1.5">
           <p className="text-[10px] text-white/40 font-mono tracking-[0.25em] uppercase">
             Precision Metal Fabrication &bull; Kelowna, BC &bull; Serving North America
           </p>
@@ -127,7 +127,7 @@ export function SiteHeader() {
       </div>
 
       {/* Main nav */}
-      <div className="mx-auto flex max-w-[100rem] items-center justify-between gap-4 px-8 py-3">
+      <div className="mx-auto flex max-w-[100rem] items-center justify-between gap-4 px-4 md:px-8 lg:px-12 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-4 shrink-0">
           <Image

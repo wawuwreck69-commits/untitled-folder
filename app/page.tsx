@@ -131,6 +131,12 @@ export default function HomePage() {
         ========================================
       */}
       <section className="relative min-h-[95vh] w-full flex flex-col justify-between overflow-hidden border-b border-white/10">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-70"
+          style={{ backgroundImage: "url('/images/cnc-press-brake-forming/squarespace-06.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-transparent" />
+
         <motion.div 
           initial={{ opacity: 0 }} 
           animate={{ opacity: 0.15 }} 
@@ -150,7 +156,7 @@ export default function HomePage() {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="relative z-10 flex justify-between items-start p-8 md:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white/40"
+          className="relative z-10 flex justify-between items-start p-4 md:p-8 lg:p-12 font-mono text-[10px] tracking-[0.25em] uppercase text-white"
         >
           <div className="space-y-1">
             <motion.p variants={fadeUp}>LOC: 50.8841° N, 119.3973° W</motion.p>
@@ -163,7 +169,7 @@ export default function HomePage() {
         </motion.div>
 
         {/* Center Massive Typography */}
-        <div className="relative z-10 px-8 md:px-12 flex-1 flex flex-col justify-center">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 flex-1 flex flex-col justify-center">
           <div className="max-w-[120rem]">
             <h1 className="text-[10vw] sm:text-[8vw] lg:text-[7vw] leading-[0.8] font-bold tracking-tighter uppercase flex flex-col gap-2 md:gap-0">
               <div className="overflow-hidden py-2">
@@ -171,7 +177,7 @@ export default function HomePage() {
                   initial={{ y: "100%" }}
                   animate={{ y: "0%" }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number], delay: 0.1 }}
-                  className="block text-white/20 transition-colors duration-1000 hover:text-white cursor-default"
+                  className="block text-white transition-colors duration-1000 hover:text-white cursor-default"
                 >
                   Precision.
                 </motion.span>
@@ -191,7 +197,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
-              className="mt-8 max-w-xl text-lg md:text-xl text-white/50 leading-relaxed font-light tracking-wide"
+              className="mt-8 max-w-xl text-lg md:text-xl text-white leading-relaxed font-light tracking-wide"
             >
               We engineer solutions for environments that demand perfection. 
               CWB-certified welding, multi-axis CNC routing, and heavy-gauge forming.
@@ -204,19 +210,19 @@ export default function HomePage() {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/80 backdrop-blur-md"
+          className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 bg-[#050505]/60 backdrop-blur-md"
         >
           <motion.div variants={fadeUp} className="p-6 md:p-8 border-r border-white/10">
-            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">Tolerances</p>
+            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white mb-3">Tolerances</p>
             <p className="font-mono text-sm md:text-base tracking-widest">±0.005 INCH</p>
           </motion.div>
           <motion.div variants={fadeUp} className="p-6 md:p-8 border-r-0 md:border-r border-white/10">
-            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">Forming Cap</p>
+            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white mb-3">Forming Cap</p>
             <p className="font-mono text-sm md:text-base tracking-widest">150 TON / 10 FT</p>
           </motion.div>
           <motion.div variants={fadeUp} className="p-6 md:p-8 border-r border-t md:border-t-0 border-white/10">
-            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-3">Materials</p>
-            <p className="font-mono text-sm md:text-base tracking-widest text-white/80">AL / SS / MS</p>
+            <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-white mb-3">Materials</p>
+            <p className="font-mono text-sm md:text-base tracking-widest text-white">AL / SS / MS</p>
           </motion.div>
           <motion.div variants={fadeUp} className="p-0 border-t md:border-t-0 border-white/10 flex">
             <Link href="/contact-us" className="w-full flex items-center justify-between p-6 md:p-8 group cursor-pointer hover:bg-white transition-colors duration-500 relative overflow-hidden">
@@ -237,7 +243,7 @@ export default function HomePage() {
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 relative">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <motion.div 
             initial="hidden"
@@ -320,7 +326,7 @@ export default function HomePage() {
         ========================================
       */}
       <section className="bg-[#050505] py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -438,7 +444,7 @@ export default function HomePage() {
         ========================================
       */}
       <section className="bg-white text-black py-32 md:py-48">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <motion.div 
             initial="hidden"
@@ -516,7 +522,7 @@ export default function HomePage() {
         ========================================
       */}
       <section className="bg-[#050505] text-[#ededed] py-32 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -566,7 +572,7 @@ export default function HomePage() {
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 border-b border-black/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -668,7 +674,7 @@ export default function HomePage() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="mx-auto max-w-[100rem] px-8 md:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16"
+          className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16"
         >
           <div className="max-w-4xl overflow-hidden">
             <motion.h2 

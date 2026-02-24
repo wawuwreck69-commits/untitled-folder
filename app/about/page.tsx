@@ -106,7 +106,7 @@ export default function AboutPage() {
         <Crosshair delay={0.3} className="bottom-8 left-8 text-white" />
         <Crosshair delay={0.4} className="bottom-8 right-8 text-white" />
 
-        <div className="relative z-10 px-8 md:px-12 mx-auto max-w-[100rem] w-full">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 mx-auto max-w-[100rem] w-full">
           <motion.div 
             initial="hidden"
             animate="visible"
@@ -138,7 +138,7 @@ export default function AboutPage() {
         ========================================
       */}
       <section className="bg-white text-black py-24 md:py-32">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -185,7 +185,7 @@ export default function AboutPage() {
         ========================================
       */}
       <section className="bg-[#f2f2f2] text-[#050505] py-32 md:py-48 border-t border-black/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           
           <motion.div 
             initial="hidden"
@@ -253,7 +253,7 @@ export default function AboutPage() {
         ========================================
       */}
       <section className="bg-[#050505] text-[#ededed] py-32 border-y border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -303,7 +303,7 @@ export default function AboutPage() {
         ========================================
       */}
       <section className="bg-[#050505] text-[#ededed] py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -358,7 +358,7 @@ export default function AboutPage() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="mx-auto max-w-[100rem] px-8 md:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16"
+          className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16"
         >
           <div className="max-w-4xl overflow-hidden">
             <motion.h2 variants={revealMask} className="text-[8vw] md:text-[6vw] font-bold tracking-tighter uppercase leading-[0.8] mb-8">

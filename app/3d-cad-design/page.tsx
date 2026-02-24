@@ -102,10 +102,10 @@ export default function CADDesignPage() {
       {/* Hero */}
       <section className="relative min-h-[70vh] flex flex-col justify-end border-b border-white/10 pb-16 md:pb-24 pt-32 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-25"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{ backgroundImage: "url('/images/3d-cad-design/squarespace-06.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#050505]/45" />
+        <div className="absolute inset-0 bg-[#050505]/20" />
         <motion.div 
           initial={{ opacity: 0 }} 
           animate={{ opacity: 0.15 }} 

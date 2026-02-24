@@ -66,7 +66,7 @@ export default function ShopPage() {
           <Crosshair className="bottom-8 right-8 text-white" />
         </motion.div>
 
-        <div className="relative z-10 px-8 md:px-12 mx-auto max-w-[100rem] w-full">
+        <div className="relative z-10 px-4 md:px-8 lg:px-12 mx-auto max-w-[100rem] w-full">
           <motion.div variants={staggerContainer} initial="hidden" animate="visible">
             <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-8 md:mb-12">
               [ Standard Components & Merch ]
@@ -89,7 +89,7 @@ export default function ShopPage() {
         ========================================
       */}
       <section className="bg-[#0a0a0a] text-white py-32 md:py-48 border-b border-white/10">
-        <div className="mx-auto max-w-[100rem] px-8 md:px-12">
+        <div className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12">
           <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40 mb-16">
             // INVENTORY / PRODUCTION RUNS
           </div>
@@ -114,7 +114,7 @@ export default function ShopPage() {
         ========================================
       */}
       <section className="bg-[#050505] text-white py-32 md:py-48 relative overflow-hidden">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-8 md:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className="mx-auto max-w-[100rem] px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-end justify-between gap-16">
           <div className="max-w-4xl">
             <h2 className="text-[8vw] md:text-[6vw] font-bold tracking-tighter uppercase leading-[0.8] mb-8">
               Custom <br/> Batch.
